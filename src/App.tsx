@@ -14,7 +14,7 @@ const App = () => {
     return(
       <Router>
   <Layout>
-  <Header >
+  <Header>
   <h1 className="HeaderText">ระบบบริการการศึกษา</h1>
   </Header>
   <Layout>

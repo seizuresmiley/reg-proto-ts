@@ -4,6 +4,7 @@ import StudentSidebar from "../components/StudentSidebar";
 import React, { Fragment } from "react";
 import StudentDescriptions from "../components/StudentDescription";
 import GradeDescription from "../components/GradeDescription";
+import EnrollmentTable from '../components/EnrollmentTable';
 const {Content } = Layout;
 const {Title} = Typography;
 
@@ -33,6 +34,14 @@ const Student = () =>{
         <Col span = {24}>
         <GradeDescription/>
         </Col>
+        </Row>
+        <Row>
+          <Title level={2}>Enrollment</Title>
+        </Row>
+        <Row>
+          <Col span = {24}>
+            <EnrollmentTable/>
+          </Col>
         </Row>
         </Content>
         </Layout>

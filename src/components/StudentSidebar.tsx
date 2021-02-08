@@ -12,7 +12,7 @@ const StudentSidebar = () =>{
         style={siderStyle}
         onCollapse={(collapsed, type) => {
           if(!collapsed && type === "clickTrigger"){
-            setSider({position:"fixed",zIndex:3});
+            setSider({position:"fixed",zIndex:4});
           }
           if(!collapsed && type === "responsive"){
             setSider({position:"relative"});
@@ -30,15 +30,15 @@ const StudentSidebar = () =>{
 >
   
             <Menu.Item key="/"><a href="/" className="nav-text">ออกจากระบบ</a></Menu.Item>
-            <Menu.Item key="/changePassword"><a href="/changePassword" className="nav-text">เปลี่ยนรหัสผ่าน</a></Menu.Item>
-            <Menu.Item key="/adddrop"><a href="/adddrop" className="nav-text">ติดตามขอเพิ่มลด</a></Menu.Item>
-            <Menu.Item key="/enroll_result">ผลการลงทะเบียน</Menu.Item>
+            <Menu.Item key="/changePassword" disabled ={true}><a href="/changePassword" className="nav-text">เปลี่ยนรหัสผ่าน</a></Menu.Item>
+            <Menu.Item key="/adddrop" disabled ={true}><a href="/adddrop" className="nav-text">ติดตามขอเพิ่มลด</a></Menu.Item>
+            <Menu.Item key="/enroll_result" disabled ={true}>ผลการลงทะเบียน</Menu.Item>
   
   
-            <Menu.Item key="/table">ค้นหารายวิชา</Menu.Item>
-            <Menu.Item key="/debt">ปฏิทินการศึกษา</Menu.Item>
-            <Menu.Item key="/grade">คำถามที่พบบ่อย</Menu.Item>
-            <Menu.Item key="/graduate">ฟอร์มเเละประกาศ</Menu.Item>
+            <Menu.Item key="/table" disabled ={true}>ค้นหารายวิชา</Menu.Item>
+            <Menu.Item key="/debt" disabled ={true}>ปฏิทินการศึกษา</Menu.Item>
+            <Menu.Item key="/grade" disabled ={true}>คำถามที่พบบ่อย</Menu.Item>
+            <Menu.Item key="/graduate"disabled ={true}>ฟอร์มเเละประกาศ</Menu.Item>
   
         </Menu>
       </Sider>

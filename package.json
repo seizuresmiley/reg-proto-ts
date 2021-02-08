@@ -12,8 +12,12 @@
     "@types/react-dom": "^16.9.10",
     "@types/react-router-dom": "^5.1.7",
     "antd": "^4.11.2",
+    "dotenv": "^8.2.0",
+    "firebase": "^8.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-dotenv": "^0.1.3",
+    "react-firebase-hooks": "^2.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "typescript": "^4.1.3",
@@ -23,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy-hosting" : "react-scripts build && firebase deploy --only hosting"
   },
   "eslintConfig": {
     "extends": [

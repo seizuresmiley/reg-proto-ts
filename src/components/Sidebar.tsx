@@ -14,7 +14,7 @@ const Sidebar = () =>{
         <Sider width={200} breakpoint="lg" className="site-layout-background" collapsedWidth = "0" style={siderStyle}
         onCollapse={(collapsed, type) => {
           if(!collapsed && type === "clickTrigger"){
-            setSider({position:"fixed",zIndex:3});
+            setSider({position:"fixed",zIndex:100,});
           }
           if(!collapsed && type === "responsive"){
             setSider({position:"relative"});

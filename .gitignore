@@ -27,3 +27,5 @@ firebase.json
 firestore.indexes.json
 firestore.rules
 .firebase/hosting.YnVpbGQ.cache
+.env
+src/services/FirebaseCredentials.tsx

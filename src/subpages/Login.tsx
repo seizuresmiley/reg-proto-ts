@@ -46,7 +46,7 @@ const Login = () => {
       <Form.Item
         label="Username"
         name="username"
-        initialValue = "2112345678"
+        initialValue = {123456789}
       >
         <Input disabled/>
       </Form.Item>
