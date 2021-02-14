@@ -5,6 +5,7 @@ import React, { Fragment } from "react";
 import StudentDescriptions from "../components/StudentDescription";
 import GradeDescription from "../components/GradeDescription";
 import EnrollmentTable from '../components/EnrollmentTable';
+import Schedule from '../components/Schedule';
 const {Content } = Layout;
 const {Title} = Typography;
 
@@ -41,6 +42,11 @@ const Student = () =>{
         <Row>
           <Col span = {24}>
             <EnrollmentTable/>
+          </Col>
+        </Row>
+        <Row>
+          <Col span={24}>
+          <Schedule/>
           </Col>
         </Row>
         </Content>
