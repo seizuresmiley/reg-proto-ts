@@ -1,10 +1,6 @@
 
 import {Row, Col,Layout,Typography,Button, Card, Space} from 'antd';
 import React, { Fragment } from "react";
-import StudentDescriptions from "../components/StudentDescription";
-import GradeDescription from "../components/GradeDescription";
-import EnrollmentTable from '../components/EnrollmentTable';
-import Schedule from '../components/Schedule';
 const {Content } = Layout;
 const {Title} = Typography;
 
@@ -39,7 +35,7 @@ const SurveyIntro = () =>{
         </Row>
         <Row justify="center">
 
-          <Col span = {24} style={{textAlign:"center"}}><Button type="primary">ผลการเรียน</Button></Col>
+          <Col span = {24} style={{textAlign:"center"}}><Button type="primary" href="/grades">ผลการเรียน</Button></Col>
         
         </Row>
         <Row justify="center">
