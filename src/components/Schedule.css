@@ -8,14 +8,44 @@
       grid-template-rows:
         [tracks] auto
         [time-0800] 1fr
+        [time-0815] 1fr
         [time-0830] 1fr
+        [time-0845] 1fr
         [time-0900] 1fr
+        [time-0915] 1fr
         [time-0930] 1fr
+        [time-0945] 1fr
         [time-1000] 1fr
+        [time-1015] 1fr
         [time-1030] 1fr
+        [time-1045] 1fr
         [time-1100] 1fr
+        [time-1115] 1fr
         [time-1130] 1fr
-        [time-1200] 1fr;
+        [time-1145] 1fr
+        [time-1200] 1fr
+        [time-1215] 1fr
+        [time-1230] 1fr
+        [time-1245] 1fr
+        [time-1300] 1fr
+        [time-1315] 1fr
+        [time-1330] 1fr
+        [time-1345] 1fr
+        [time-1400] 1fr
+        [time-1415] 1fr
+        [time-1430] 1fr
+        [time-1445] 1fr
+        [time-1500] 1fr
+        [time-1515] 1fr
+        [time-1530] 1fr
+        [time-1545] 1fr
+        [time-1600] 1fr
+        [time-1615] 1fr
+        [time-1630] 1fr
+        [time-1645] 1fr
+        [time-1700] 1fr;
+
+
         /* Note 1:
         Use 24hr time for gridline names for simplicity
   
@@ -29,12 +59,18 @@
         [track-1-end track-2-start] 1fr
         [track-2-end track-3-start] 1fr
         [track-3-end track-4-start] 1fr
-        [track-4-end];
+        [track-4-end track-5-start] 1fr
+        [track-5-end];
     }
   }
   
   .time-slot {
     grid-column: times;
+    display:none;
+  }
+
+  .day-slot{
+      display:block;
   }
   
   .track-slot {
@@ -43,6 +79,12 @@
   
   @supports( display:grid ) {
     @media screen and (min-width:700px) {
+        .time-slot{
+            display:block;
+        }
+        .day-slot{
+            display:none;
+        }
       .track-slot {
         display: block;
         padding: 10px 5px 5px;
@@ -130,6 +172,10 @@
   
   .track-4 {
     background-color: #c35500;
+    color: #fff;
+  }
+  .track-5 {
+    background-color: #c30078;
     color: #fff;
   }
   

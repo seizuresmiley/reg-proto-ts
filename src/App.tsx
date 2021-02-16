@@ -1,6 +1,6 @@
 import { Layout } from 'antd';
 import './App.css';
-import MainPage from './subpages/MainPage';
+import SurveyIntro from './subpages/SurveyIntro'
 import Login from './subpages/Login'
 import NotFound from './components/NotFound'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -19,7 +19,7 @@ const App = () => {
   </Header>
   <Layout>
       <Switch>
-      <Route exact path="/" component={MainPage}/>
+      <Route exact path="/" component={SurveyIntro}/>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/student" component={Student}/>
       <Route component={NotFound}/>

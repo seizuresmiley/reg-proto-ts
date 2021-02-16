@@ -29,22 +29,6 @@ const Student = () =>{
         </Col>
         </Row>
         <Row>
-          <Title level={2}>Grades</Title>
-        </Row>
-        <Row gutter={[24,24]}>
-        <Col span = {24}>
-        <GradeDescription/>
-        </Col>
-        </Row>
-        <Row>
-          <Title level={2}>Enrollment</Title>
-        </Row>
-        <Row>
-          <Col span = {24}>
-            <EnrollmentTable/>
-          </Col>
-        </Row>
-        <Row>
           <Col span={24}>
           <Schedule/>
           </Col>
